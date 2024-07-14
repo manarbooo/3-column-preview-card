@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100..900&family=Lexend+Deca:wght@100..900&display=swap');
+
+
+:root{
+    --Bright_orange: hsl(31, 77%, 52%);
+    --Dark_cyan: hsl(184, 100%, 22%);
+    --Very_dark_cyan: hsl(179, 100%, 13%);
+    --Transparent_white_paragraphs: hsla(0, 0%, 100%, 0.75);
+    --Very_light_gray_background_headings_buttons: hsl(0, 0%, 95%);
+}
+body, html{
+    width: 100%;
+    height: 110vh;
+}
+
+body{
+    margin: 0;
+    font-family: 'Lexend Deca', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--Very_light_gray_background_headings_buttons);
+    
+}
+
+.container{
+    display: flex;
+    width: 990px;
+    flex-direction: row;
+    align-items: center;
+    height: 500px;
+}
+
+.firstCard{
+    background-color: var(--Bright_orange);
+    height: 100%;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px 0 0 10px;
+}
+
+
+.secondCard{
+    background-color: var(--Dark_cyan);
+    height: 100%;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.thirdCard{
+    background-color: var(--Very_dark_cyan);
+    height: 100%;
+    width: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+}
+
+.icon{
+    margin-top: 50px;
+    margin-left: -120px;
+}
+
+
+.mainTitle{
+    font-family: "Big Shoulders Display";
+    color: var(--Very_light_gray_background_headings_buttons);
+    margin-left: -120px;
+    margin-top: 30px;
+    font-size: 2.3rem;
+}
+
+.description{
+    color: var(--Transparent_white_paragraphs);
+    width: 80%;
+    line-height: 1.8;
+    margin-left: 40px;
+}
+
+.firstBtn{
+    width: 150px;
+    height: 50px;
+    background-color: var(--Very_light_gray_background_headings_buttons);
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Bright_orange);
+    border-radius: 25px;
+    border: none;
+    margin-top: 35px;
+    margin-right: 80px;
+    font-weight: 500;
+}
+
+
+
+.secondBtn{
+    width: 150px;
+    height: 50px;
+    background-color: var(--Very_light_gray_background_headings_buttons);
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Dark_cyan);
+    border-radius: 25px;
+    border: none;
+    margin-top: 35px;
+    margin-right: 80px;
+    font-weight: 500;
+}
+
+.thirdBtn{
+    width: 150px;
+    height: 50px;
+    background-color: var(--Very_light_gray_background_headings_buttons);
+    font-family: 'Lexend Deca', sans-serif;
+    color: var(--Very_dark_cyan);
+    border-radius: 25px;
+    border: none;
+    margin-top: 35px;
+    margin-right: 80px;
+    font-weight: 500;
+}
+
+.firstBtn:hover{
+    border: 3px solid var(--Very_light_gray_background_headings_buttons);
+    background-color: var(--Bright_orange);
+    cursor: pointer;
+    color: var(--Very_light_gray_background_headings_buttons);
+}
+
+.secondBtn:hover{
+    border: 3px solid var(--Very_light_gray_background_headings_buttons);
+    background-color: var(--Dark_cyan);
+    cursor: pointer;
+    color: var(--Very_light_gray_background_headings_buttons);
+}
+
+.thirdBtn:hover{
+    border: 3px solid var(--Very_light_gray_background_headings_buttons);
+    background-color: var(--Very_dark_cyan);
+    cursor: pointer;
+    color: var(--Very_light_gray_background_headings_buttons);
+}
+
+@media (max-width: 930px) {
+
+    body{
+        min-height: 1510px;
+    }
+    .container{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .firstCard{
+        border-radius: 10px 10px 0 0;
+    }
+    .thirdCard{
+        border-radius:  0 0 10px 10px;
+    }
+}
